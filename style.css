@@ -546,7 +546,8 @@
   margin-top: auto; }
   .burger-menu__footer-button-list {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 16px; }
   .burger-menu__footer-button {
     margin-right: 16px; }
   .burger-menu__footer-mail {
@@ -588,6 +589,14 @@
     margin-bottom: 24px; }
   .burger-menu__header {
     margin-bottom: 20px; } }
+
+@media (max-height: 610px) {
+  .burger-menu__footer-leng-list {
+    margin-bottom: 10px; }
+  .burger-menu__footer-leng {
+    margin-top: 5px; }
+  .burger-menu__footer-mail {
+    margin-bottom: 7px; } }
 
 .feedback-menu {
   background-color: white;
