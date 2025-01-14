@@ -1,4 +1,9 @@
-$bgColor: #24292e;
+@import 'src/scss/blocks/main_menu/_main_menu_packStyle.scss';
+@import 'src/scss/blocks/burger_menu/_burger_menu_packStyle.scss';
+@import 'src/scss/blocks/feedback_menu/_feedback_menu_packStyle.scss';
+@import 'src/scss/blocks/call_menu/_call_menu_packStyle.scss';
+
+$bgColor: #f8f8f8;
 $text: #fff;
 
 @font-face {
@@ -8,10 +13,123 @@ $text: #fff;
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'TTLakes';
+  font-weight: 700;
+  src: url('../fonts/TTLakes-Bold.woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-weight: 400;
+  src: url('../fonts/TTLakes-Regular.woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TTLakes';
+  font-weight: 500;
+  src: url('../fonts/TTLakes-Medium.woff');
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   padding: 1rem;
   margin: 0;
-  font-family: Comic, sans-serif;
+  padding: 0;
+  font-family: TTLakes, sans-serif;
   background-color: $bgColor;
   color: $text;
+}
+
+.web-box {
+  display: grid;
+  grid-template-columns: minmax(280px, 320px) minmax(1071px, 1120px);
+}
+
+@media (max-width: 1365px) {
+  .web-box {
+    display: block;
+  }
+  .main-menu__main .main-menu__title-box .main-menu__title-buttonBox {
+    display: none;
+  }
+}
+@media (min-width: 1366px) {
+  .main-menu__main .main-menu__title-box {
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .web-box {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1365px) {
+  .web-box__burger-menu {
+    position: absolute;
+    z-index: -3;
+    width: 320px;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+    &-clickBlock {
+      width: 100%;
+    }
+  }
+  .burger_menu__header-close {
+    margin-right: 16px;
+  }
+
+  .unlock-burger {
+    z-index: 2;
+  }
+
+  .aside-logo {
+    margin-left: 20px;
+    height: 50px;
+    width: 97px;
+    margin-top: 3px;
+  }
+
+  .burger-menu__header {
+    margin-top: 16px;
+  }
+}
+
+.blur {
+  opacity: 0.05;
+  height: 100vh;
+  overflow: hidden;
+  filter: blur(5px);
+}
+
+@media (max-width: 360px) {
+  .web-box__burger-menu {
+    box-sizing: border-box;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .web-box__burger-menu {
+    box-sizing: border-box;
+    width: 320px;
+  }
+}
+@media (min-width: 1366px) {
+}
+
+@media (max-width: 767px) {
+  .aside-logo {
+    margin-left: 2px;
+  }
+}
+
+.feedback-tel-box {
+  background-color: $color-smokeWhite;
 }

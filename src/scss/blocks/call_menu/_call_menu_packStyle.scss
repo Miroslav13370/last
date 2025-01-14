@@ -1,0 +1,106 @@
+@import 'src/scss/_colors.scss';
+
+.calll-menu {
+  background-color: $color-white;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  color: black;
+  max-width: 440px;
+  min-width: 320px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  height: 100vh;
+  position: absolute;
+  z-index: -10;
+  padding-top: 24px;
+  right: 0;
+  &__title {
+    margin: 0;
+    padding-top: 40px;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  &__title::before {
+    content: '';
+    position: absolute;
+    background-color: $color-lightTurquoise;
+    height: 40px;
+    width: 4px;
+    border-radius: 2px;
+    margin-left: -32px;
+    margin-top: -5px;
+  }
+  &__inp {
+    display: grid;
+  }
+  .inp {
+    &__elem {
+      box-sizing: border-box;
+      padding: 0;
+      height: 42px;
+      border: none;
+      border-radius: 8px;
+      border: 1px solid $color-blueLavanda;
+      margin-bottom: 16px;
+      padding-left: 16px;
+    }
+    &__name::placeholder {
+      color: $color-placeholder;
+    }
+    &__tel::placeholder {
+      color: $color-placeholder;
+    }
+    &__mail::placeholder {
+      color: $color-placeholder;
+    }
+    &__massege::placeholder {
+      color: $color-placeholder;
+    }
+
+    &__massege {
+      margin-bottom: 0;
+    }
+  }
+  &__description {
+    margin-bottom: 19px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__button {
+    background-color: $color-pink;
+    width: 136px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    justify-self: end;
+    &-text {
+      margin-left: 17px;
+      margin-right: 17px;
+      color: $color-white;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+}
+
+@media (min-width: 520px) {
+  .calll-menu {
+    &__close {
+      position: absolute;
+      margin-top: 35px;
+      margin-left: -105px;
+    }
+  }
+}
+
+.calll-menu-open {
+  position: absolute;
+  z-index: 6;
+  right: 0;
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2);
+}

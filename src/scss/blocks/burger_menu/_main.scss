@@ -1,0 +1,29 @@
+@import 'src/scss/_colors.scss';
+
+.burger-menu__main {
+  display: flex;
+  flex-direction: column;
+  &-p {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 500;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    &:nth-child(2) {
+      color: $color-grey;
+      font-size: 14px;
+      font-weight: 400;
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: $color-lightTurquoise;
+        border-radius: 2px;
+        height: 28px;
+        width: 4px;
+        margin-top: -4px;
+        margin-left: -19px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@import 'src/scss/_colors.scss';
+
+.main-menu__head {
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 16px;
+  .header-elem {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0;
+      margin: 0;
+      display: block;
+    }
+  }
+
+  .logo {
+    width: 97px;
+    height: 50px;
+  }
+
+  .main-menu__left-part {
+    display: flex;
+    align-items: center;
+  }
+  .main-menu__right-part {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .sp_one {
+    display: none;
+  }
+  .call {
+    display: none;
+  }
+  .chat {
+    display: none;
+  }
+  .profile {
+    display: none;
+  }
+}
+@media (min-width: 1366px) {
+  .web-box {
+    display: flex;
+  }
+  .main-menu__head {
+    display: none;
+  }
+}

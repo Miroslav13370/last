@@ -1,0 +1,592 @@
+@import 'src/scss/_colors.scss';
+
+.main-menu__main {
+  background-color: $color-smokeWhite;
+  margin: 0;
+  padding-left: 24px;
+  .main-menu__title-box {
+    display: flex;
+    justify-content: space-between;
+    .main-menu__title-buttonBox {
+      display: flex;
+      img {
+        margin-left: 8px;
+      }
+    }
+  }
+  .feedback {
+    display: flex;
+    align-items: center;
+  }
+  .stat {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-left: 32px;
+  }
+  .main-menu__title {
+    display: block;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    margin-bottom: 32px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $color-lightTurquoise;
+      height: 40px;
+      width: 4px;
+      border-radius: 2px;
+      margin-left: -26px;
+    }
+  }
+  .main-menu__list-features {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 32px;
+    &-elem {
+      height: 40px;
+      margin: 0;
+      padding: 0;
+      align-self: center;
+      display: block;
+      text-align: center;
+      &:first-child {
+        background-color: $color-white;
+        border-radius: 6px;
+        border: 1px solid $color-pang;
+      }
+      p {
+        padding: 0;
+        margin: 8px 16px;
+        white-space: nowrap;
+        display: block;
+      }
+    }
+  }
+  .main-menu__company-information {
+    display: flex;
+    margin-right: 24px;
+    margin-left: 24px;
+    &-img {
+      display: block;
+      min-width: 54%;
+      align-self: flex-start;
+      margin-left: 24px;
+      max-width: 500px;
+    }
+    &-text {
+      font-size: 14px;
+      margin: 0;
+      display: block;
+      margin-right: 24px;
+    }
+
+    &-button-combining {
+      display: flex;
+      .main-menu__company-information-buttton-img {
+        align-self: center;
+      }
+      .main-menu__company-information-buttton {
+        opacity: 0;
+      }
+      p {
+        margin-left: -15px;
+        font-size: 16px;
+      }
+    }
+    .rotate {
+      transform: rotate(180deg);
+    }
+  }
+  .main-menu__repair-brand-title {
+    .title {
+      padding: 16px 0;
+      margin: 0;
+      margin-top: 32px;
+      margin-bottom: 24px;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 16px;
+      color: $color-grey;
+      background-image: linear-gradient(
+        to right,
+        $color-smokeWhite,
+        $color-white
+      );
+    }
+  }
+
+  .main-menu__repair-brand-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 16px;
+    margin-right: 24px;
+
+    .main-menu__repair-brand-elem {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-white;
+      padding: 16px;
+      border-radius: 6px;
+      border: 1px solid $color-blueLavanda;
+      height: 72px;
+    }
+  }
+  .main-menu__brand-open {
+    display: flex;
+    align-items: center;
+    &-text {
+      display: block;
+      margin-left: -16px;
+    }
+    &-button {
+      opacity: 0;
+    }
+  }
+  .unlock-brands {
+    max-height: 190px;
+    overflow: hidden;
+  }
+
+  .rotate-brand {
+    transform: rotate(180deg);
+  }
+
+  .main-menu__technic-title {
+    padding: 16px 0;
+    margin: 0;
+    margin-bottom: 24px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-grey;
+    background-image: linear-gradient(
+      to right,
+      $color-smokeWhite,
+      $color-white
+    );
+  }
+
+  .main-menu__technic-list {
+    p {
+      white-space: nowrap;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 24px;
+    column-gap: 16px;
+    margin-right: 24px;
+    .main-menu__technic-elem {
+      display: flex;
+      justify-content: space-between;
+      height: 160px;
+      background-color: $color-white;
+      border-radius: 6px;
+      border: 1px solid $color-blueLavanda;
+
+      &-title {
+        align-self: flex-start;
+        padding-left: 16px;
+      }
+      &-Go {
+        align-self: flex-end;
+        padding-right: 16px;
+        padding-bottom: 16px;
+      }
+    }
+  }
+
+  .main-menu__technic-open {
+    display: flex;
+    align-items: center;
+    &-text {
+      display: block;
+      margin-left: -16px;
+    }
+    &-button {
+      opacity: 0;
+    }
+  }
+  .unlock-technic {
+    max-height: 165px;
+    overflow: hidden;
+  }
+
+  .rotate-technic {
+    transform: rotate(180deg);
+  }
+
+  .main-menu__priceTitle {
+    padding: 16px 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-grey;
+    background-image: linear-gradient(
+      to right,
+      $color-smokeWhite,
+      $color-white
+    );
+  }
+  .main-menu__price {
+    margin-right: 24px;
+    .title-btn {
+      opacity: 0;
+    }
+    &-Box {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    &-listBox {
+      background-color: $color-white;
+      padding-left: 16px;
+      padding-right: 16px;
+      border-radius: 6px;
+      display: block;
+    }
+    &-button {
+      background-color: $color-pink;
+      width: 119px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      border-radius: 16px;
+      justify-self: end;
+      &-text {
+        margin-left: 12px;
+        margin-right: 17px;
+        color: $color-white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+      }
+    }
+    &-title {
+      display: grid;
+      grid-template-columns: 2fr 0.5fr 0.5fr 0.38fr;
+      align-items: center;
+      &-elem {
+        font-size: 14px;
+        font-weight: 400;
+        color: $color-grey;
+      }
+    }
+    &-list {
+      background-color: $color-white;
+      border-radius: 6px;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &-line {
+      display: grid;
+      grid-template-columns: 2fr 0.5fr 0.5fr 0.38fr;
+      align-items: center;
+      border-bottom: 1px solid $color-blueLavanda;
+      &:last-child {
+        border-bottom: none;
+      }
+      &-Elem {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    &-bottom {
+      margin-top: 24px;
+      margin-bottom: 66px;
+      &-text {
+        display: block;
+        max-width: 421px;
+        margin: 0;
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      &-link {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-weight: 500;
+        &-text2 {
+          margin: 0;
+        }
+        &-text2-box {
+          display: flex;
+          p {
+            margin-right: 10px;
+          }
+        }
+        &-text {
+          display: block;
+          margin: 0;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .unlock {
+    max-height: 190px;
+    overflow: hidden;
+  }
+}
+
+.margin-box {
+  margin-right: 24px;
+}
+
+@media (max-width: 768px) {
+  .margin-box {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .slider-1 .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+    overflow: visible;
+  }
+  .slider-2 .swiper-wrapper {
+    display: flex;
+    column-gap: 0;
+    overflow: visible;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .main-menu .main-menu__price-list {
+    display: flex;
+    background-color: transparent;
+  }
+  .hidden2 {
+    overflow: hidden;
+  }
+
+  .main-menu__main .main-menu__price {
+    margin-right: 0;
+  }
+
+  .main-menu__main .main-menu__price-line {
+    border: none;
+    display: block;
+  }
+
+  .main-menu__main .main-menu__price-line {
+    border-radius: 6px;
+    height: 200px;
+    box-sizing: border-box;
+    display: grid;
+    background-color: $color-white;
+    padding: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'header header'
+      'content botton'
+      'content1 botton';
+  }
+
+  .one {
+    grid-area: header;
+
+    &::before {
+      content: 'Ремонтные услуги';
+      position: absolute;
+      margin-top: -20px;
+      color: $color-grey;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .two {
+    grid-area: content;
+    &::before {
+      content: 'Цена';
+      position: absolute;
+      margin-top: -20px;
+      color: $color-grey;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    align-self: end;
+  }
+
+  .three {
+    grid-area: content1;
+    &::before {
+      content: 'Срок';
+      position: absolute;
+      margin-top: -20px;
+      color: $color-grey;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    align-self: end;
+  }
+
+  .four {
+    grid-area: botton;
+  }
+
+  .main-menu__main .main-menu__price-listBox {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+  }
+  .main-menu__main .main-menu__price-line-Elem {
+    margin: 0;
+  }
+
+  .main-menu__main .main-menu__price-line-Elem:first-child {
+    margin-top: 0px;
+  }
+
+  .main-menu__main .main-menu__price-line-Elem:nth-child(2) {
+    margin-bottom: 10px;
+  }
+
+  .main-menu__main .main-menu__price-button {
+    margin-top: auto;
+  }
+
+  .swiper-pagination1,
+  .swiper-pagination2,
+  .swiper-pagination3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+  .main-menu__main .main-menu__price-bottom {
+    margin-bottom: 45px;
+  }
+
+  .main-menu__main .main-menu__price-bottom-text {
+    margin-right: 16px;
+  }
+  .main-menu__price-bottom-link {
+    margin-right: 16px;
+  }
+  .main-menu__technic-open {
+    &-button-img {
+      display: none;
+    }
+    &-button {
+      display: none;
+    }
+    .main-menu__technic-open-text {
+      display: none;
+    }
+  }
+  .main-menu__brand-open {
+    img {
+      display: none;
+    }
+
+    input {
+      display: none;
+    }
+    p {
+      display: none;
+    }
+    .main-menu__brand-open-text {
+      display: none;
+    }
+  }
+  .main-menu__main .main-menu__priceTitle {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .main-menu__main .main-menu__technic-title {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+  .main-menu__main .main-menu__company-information {
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .main-menu__main .main-menu__company-information-img {
+    margin: 0;
+    min-width: 100%;
+  }
+  .main-menu__main {
+    padding-left: 0;
+  }
+
+  .main-menu__main {
+    margin-left: 0;
+  }
+  .magin-l {
+    margin-left: 24px;
+  }
+
+  .main-menu__main .main-menu__company-information {
+    margin: 0;
+  }
+
+  .main-menu__main .main-menu__company-information-text {
+    margin-left: 24px;
+  }
+
+  .main-menu__main .main-menu__company-information-button-combining {
+    margin-left: 24px;
+  }
+
+  .main-menu__main .main-menu__title {
+    padding-left: 24px;
+  }
+
+  .main-menu__main .main-menu__technic-title {
+    padding-left: 24px;
+  }
+
+  .main-menu__main .main-menu__priceTitle {
+    padding-left: 24px;
+  }
+  .main-menu__main .unlock {
+    max-height: 95px;
+  }
+
+  .main-menu__main .main-menu__company-information-button-combining {
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .main-menu__main .main-menu__repair-brand-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .main-menu__main .main-menu__technic-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .main-menu__main .main-menu__list-features {
+    flex-wrap: wrap;
+  }
+  .main-menu__main .main-menu__list-features-elem:last-child {
+    width: 100px;
+  }
+}

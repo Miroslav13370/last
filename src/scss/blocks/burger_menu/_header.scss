@@ -1,0 +1,19 @@
+@import 'src/scss/_colors.scss';
+
+.burger-menu__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 46px;
+  &-left {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1366px) {
+  .burger_menu__header-close {
+    display: none;
+  }
+}
