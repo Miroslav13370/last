@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpack 4 Starter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link href="style.css" rel="stylesheet"></head>
+  <body>
+    <div class="feedback-menu">
+      <img src="./img/burger/close.svg" alt="" class="feedback-menu__close">
+      <h1 class="feedback-menu__title">
+        Обратная связь
+      </h1>
+      <div class="feedback-menu__inp inp">
+        <input placeholder="Имя" type="text" class="inp__name inp__elem">
+        <input placeholder="Телефон" type="text" class="inp__tel inp__elem">
+        <input placeholder="Электронная почта" type="text" class="inp__mail inp__elem">
+        <input placeholder="Сообщение" type="text" class="inp__massege inp__elem">
+      </div>
+      <p class="feedback-menu__description">
+        Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь 
+        с нашей политикой конфиденциальности
+      </p>
+      <div class="feedback-menu__button">
+        <p class="feedback-menu__button-text">
+          Отправить
+        </p>
+        <img src="./img/main/dropdown.svg" alt="" class="feedback-menu__button-arrow">
+      </div>
+    </div>
+
+    <div class="calll-menu">
+      <img src="./img/burger/close.svg" alt="" class="calll-menu__close">
+      <h1 class="calll-menu__title">
+        Заказать звонок
+      </h1>
+      <div class="calll-menu__inp inp">
+        <input placeholder="Телефон" type="text" class="inp__tel inp__elem">
+      </div>
+      <p class="calll-menu__description">
+        Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь 
+        с нашей политикой конфиденциальности
+      </p>
+      <div class="calll-menu__button">
+        <p class="calll-menu__button-text">
+          Отправить
+        </p>
+        <img src="./img/main/dropdown.svg" alt="" class="calll-menu__button-arrow">
+      </div>
+
+
+
+    </div>
+
+    
+    <div class="feedback-tel-box">
+    <div class="web-box">
+    <div class="web-box__burger-menu">
+      <div class="burger-menu">
+
+      <div class="burger-menu__header">
+        <div class="burger-menu__header-left">
+          <img src="./img/burger/close.svg" alt="" class="burger_menu__header-close">
+          <img src="./img/Group.svg" alt="" class="burger_menu__header-logo aside-logo">
+        </div>
+        <img src="./img/burger/loop.svg" alt="" class="burger_menu__header-loop">
+      </div>
+      <div class="burger-menu__main">
+        <p class="burger-menu__main-p">
+          Ремонт техники
+        </p>
+        <p class="burger-menu__main-p">
+          Услуги и сервисы
+        </p>
+        <p class="burger-menu__main-p">
+          Корпоративным клиентам
+        </p>
+        <p class="burger-menu__main-p">
+          Продавцам техники
+        </p>
+        <p class="burger-menu__main-p">
+          Партнерам
+        </p>
+        <p class="burger-menu__main-p">
+          Производителям
+        </p>
+        <p class="burger-menu__main-p">
+          Наши сервисные центры
+        </p>
+        <p class="burger-menu__main-p">
+          Контакты
+        </p>
+        
+
+      </div>
+      <div class="burger-menu__footer">
+        <div class="burger-menu__footer-button-list">
+          <img src="./img/call.svg" alt="" class="burger-menu__footer-button tell-burg">
+          <img src="./img/chat.svg" alt="" class="burger-menu__footer-button massage massage-burger">
+          <img src="./img/profile.svg" alt="" class="burger-menu__footer-button">
+        </div>
+        <p class="burger-menu__footer-mail">
+          mail@cps.com
+        </p>
+        <p class="burger-menu__footer-tel">
+          8 800 890 8900
+        </p>
+        <div class="burger-menu__footer-leng-list">
+          <p class="burger-menu__footer-leng ru">
+            RU
+          </p>
+          <p class="burger-menu__footer-leng en">
+            EN
+          </p>
+          <p class="burger-menu__footer-leng ch">
+            CH
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    </div>
+
+
+      
+    <div class="main-menu web-box__center">
+      <header class="main-menu__head">
+        <div class="main-menu__left-part">
+          <button class="main-menu__burger-button burger header-elem">
+            <a class="main-menu__link-burger" href="#"><img class="main-menu__burger-img burger__img" src="./img/burger.svg" alt=""></a>
+          </button>
+          <img class="main-menu__separator header-elem sp_one" src="./img/divider.svg" alt="">
+          <img class="main-menu__logo header-elem logo" src="./img/Group.svg" alt="">
+        </div>
+        <div class="main-menu__right-part">
+          <button class="main-menu__call-button call header-elem">
+            <a class="main-menu__link-call" href="#"><img class="main-menu__call-img call__img tell" src="./img/call.svg" alt="">
+            </a>
+          </button>
+          <button class="main-menu__chat-button chat header-elem">
+            <a class="main-menu__link-chat" href="#"><img class="main-menu__chat-img chat__img massage" src="./img/chat.svg" alt=""></a>
+          </button>
+          <button class="main-menu__profile-button profile header-elem">
+            <a class="main-menu__link-profile" href="#"><img class="main-menu__profile-img profile__img" src="./img/profile.svg" alt=""></a>
+          </button>
+          <img class="main-menu__separator header-elem" src="./img/divider.svg" alt="">
+          <button class="main-menu__repair-button repair header-elem">
+            <a class="main-menu__link-repair" href="#"><img class="main-menu__repair-img repair__img" src="./img/repair.svg" alt=""></a>
+          </button>
+          <button class="main-menu__checkstatus-button checkstatus header-elem">
+            <a class="main-menu__link-checkstatus" href="#"><img class="main-menu__checkstatus-img checkstatus__img" src="./img/checkstatus.svg" alt=""></a>
+          </button>
+        </div>
+      </header>
+      <main class="main-menu__main">
+        <div class="main-menu__title-box">
+          <h1 class="main-menu__title magin-l">Услуги и сервисы</h1>
+          <div class="main-menu__title-buttonBox">
+            <div class="feedback">
+              <p class="feedback__title repair__img">
+                Оставить заявку
+              </p>
+              <img src="./img/repair.svg" alt="" class="feedback__img">
+            </div>
+            <div class="stat">
+              <p class="stat__title">
+                Статус ремонта
+              </p>
+              <img class="main-menu__checkstatus-img checkstatus__img" src="./img/checkstatus.svg" alt="">
+
+
+            </div>
+          </div>
+
+        </div>
+        
+
+        <div class="main-menu__list-features magin-l">
+          <div class="main-menu__list-features-elem"><p> Ремонтируемые бренды </p></div>
+          <div class="main-menu__list-features-elem"><p> Дополнительные услуги </p></div>
+          <div class="main-menu__list-features-elem"><p> Цены на услуги </p></div>
+          <div class="main-menu__list-features-elem"><p>
+            Адреса сервисных центров
+            </p></div>
+          <div class="main-menu__list-features-elem"><p> Специальные цены </p></div>
+         <div class="main-menu__list-features-elem"> <p> Отзывы </p></div>
+        </div>
+        <div class="main-menu__company-information">
+          <div class="main-menu__company-information-boxLeft">
+            <p class="main-menu__company-information-text unlock">Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя. <br><br> Мы успешно работаем с 1992 года
+            и заслужили репутацию надежного партнера, что подтверждает большое
+            количество постоянных клиентов. Мы гордимся тем, что к нам
+            обращаются по рекомендациям и, в свою очередь, советуют нас родным и
+            близким. <br> <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quo nam, aliquam asperiores accusantium, 
+            odit est dolorem corporis vero at assumenda rem possimus consequatur quasi minus voluptatem 
+            facere quis. Natus, excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aliquid eius itaque omnis amet harum magni facilis, quaerat nihil illum nam dignissimos 
+            nostrum earum sequi laborum explicabo tempore accusamus assumenda sed.</p>
+          
+          <label class="main-menu__company-information-button-combining">
+            <img src="./img/main/expand.png" alt="" class="main-menu__company-information-buttton-img">
+            <input type="checkbox" class="main-menu__company-information-buttton" checked="checked">
+              <p class="main-menu__company-information-buttton-text">Читать далее</p>
+          </label>
+          </div>
+            <img src="./img/main/MG_3223.jpg" alt="" class="main-menu__company-information-img">
+        </div>
+        <div class="main-menu__repair-brand-title magin-l">
+          <p class="title">Ремонт техники различных брендов</p>
+        </div>
+        <div class="margin-box magin-l">
+        <div class="swiper_one swiper slider-1">
+        <div class="main-menu__repair-brand-list unlock-brands swiper-wrapper">
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/lenovo.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/samsung.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/apple.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/supersonic.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/bosch.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/hp.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/acer.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/sony.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+
+          <div class="main-menu__repair-brand-elem swiper-slide">
+            <img src="./img/main/repair_brand/lenovo.png" alt="" class="main-menu__repair-brand-img">
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__repair-brand-imgGo">
+          </div>
+        </div>
+        <div class="swiper-pagination1"></div>
+      </div>
+    </div>
+        <label class="main-menu__brand-open">
+          <img src="./img/main/out.png" alt="" class="main-menu__brand-open-button-img rotate-brand">
+          <input type="checkbox" class="main-menu__brand-open-button" checked="checked">
+            <p class="main-menu__brand-open-text">Показать все</p>
+        </label>
+        <p class="main-menu__technic-title magin-l">
+          Ремонт различных видов техники
+        </p>
+        <div class="margin-box magin-l">
+        <div class="slider-2 swiper_two">
+        <div class="main-menu__technic-list unlock-technic swiper-wrapper">
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Ремонт ноутбуков</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Ремонт планшетов</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Ремонт ПК</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Ремонт мониторов</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Ремонт черныхДыр</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Ремонт ремонта</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Ремонт чего-тоЕще</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Зачем яТутВообще</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+          <div class="main-menu__technic-elem swiper-slide">
+            <p class="main-menu__technic-elem-title">Как жеЯУсталУже</p>
+            <img src="./img/main/repair_brand/go.png" alt="" class="main-menu__technic-elem-Go">
+          </div>
+        </div>
+        <div class="swiper-pagination2"></div>
+      </div>
+    </div>
+        <label class="main-menu__technic-open">
+          <img src="./img/main/out.png" alt="" class="main-menu__technic-open-button-img rotate-technic">
+          <input type="checkbox" class="main-menu__technic-open-button" checked="checked">
+            <p class="main-menu__technic-open-text">Показать все</p>
+        </label>
+        <p class="main-menu__priceTitle magin-l">
+          Цены на услуги
+        </p>
+        <div class="main-menu__price magin-l">
+          <div class="main-menu__price-Box hidden">
+
+          
+          <div class="main-menu__price-title">
+            <p class="main-menu__price-title-elem">
+              Ремонтные услуги
+            </p>
+            <p class="main-menu__price-title-elem">
+              Цена
+            </p>
+            <p class="main-menu__price-title-elem">
+              Срок
+            </p>
+            <div class="main-menu__price-button title-btn">
+              <p class="main-menu__price-button-text">
+                Заказать
+              </p>
+              <img src="./img/main/dropdown.svg" alt="" class="main-menu__price-button-arrow">
+            </div>
+
+          </div>
+        </div>
+        <div class="hidden2">
+          <div class="main-menu__price-listBox slider-3 swiper_three">
+          <div class="main-menu__price-list swiper-wrapper">
+            <div class="main-menu__price-line swiper-slide">
+              <p class="main-menu__price-line-Elem one">
+                Диагностика
+              </p>
+              <p class="main-menu__price-line-Elem two">
+                Бесплатно
+              </p>
+              <p class="main-menu__price-line-Elem three">
+                30 мин
+              </p>
+              <div class="main-menu__price-button four">
+                <p class="main-menu__price-button-text">
+                  Заказать
+                </p>
+                <img src="./img/main/dropdown.svg" alt="" class="main-menu__price-button-arrow">
+              </div>
+            </div>
+            <div class="main-menu__price-line swiper-slide">
+              <p class="main-menu__price-line-Elem one">
+                Замена дисплея
+              </p>
+              <p class="main-menu__price-line-Elem two">
+                1 000 ₽
+              </p>
+              <p class="main-menu__price-line-Elem three">
+                30-120 мин
+              </p>
+              <div class="main-menu__price-button four">
+                <p class="main-menu__price-button-text">
+                  Заказать
+                </p>
+                <img src="./img/main/dropdown.svg" alt="" class="main-menu__price-button-arrow">
+              </div>
+            </div>
+            <div class="main-menu__price-line swiper-slide">
+              <p class="main-menu__price-line-Elem one">
+                Замена полифонического динамика
+              </p>
+              <p class="main-menu__price-line-Elem two">
+                1 000 ₽
+              </p>
+              <p class="main-menu__price-line-Elem three">
+                30-120 мин
+              </p>
+              <div class="main-menu__price-button four">
+                <p class="main-menu__price-button-text">
+                  Заказать
+                </p>
+                <img src="./img/main/dropdown.svg" alt="" class="main-menu__price-button-arrow">
+              </div>
+            </div>
+            <div class="main-menu__price-line swiper-slide">
+              <p class="main-menu__price-line-Elem one">
+                Тестирование с выдачей технического заключения
+              </p>
+              <p class="main-menu__price-line-Elem two">
+                1 000 ₽
+              </p>
+              <p class="main-menu__price-line-Elem three">
+                30-120 мин
+              </p>
+              <div class="main-menu__price-button four">
+                <p class="main-menu__price-button-text">
+                  Заказать
+                </p>
+                <img src="./img/main/dropdown.svg" alt="" class="main-menu__price-button-arrow">
+              </div>
+            </div>
+            <div class="main-menu__price-line swiper-slide">
+              <p class="main-menu__price-line-Elem one">
+                Замена программного обеспечения
+              </p>
+              <p class="main-menu__price-line-Elem two">
+                1 000 ₽
+              </p>
+              <p class="main-menu__price-line-Elem three">
+                30-120 мин
+              </p>
+              <div class="main-menu__price-button four">
+                <p class="main-menu__price-button-text">
+                  Заказать
+                </p>
+                <img src="./img/main/dropdown.svg" alt="" class="main-menu__price-button-arrow">
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-pagination3"></div>
+        </div>
+      </div>
+        <div class="main-menu__price-bottom">
+          <p class="main-menu__price-bottom-text">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+          </p>
+          <div class="main-menu__price-bottom-link">
+            <p class="main-menu__price-bottom-link-text">
+              Получить коммерческое 
+            </p>
+            <div class="main-menu__price-bottom-link-text2-box">
+              <p class="main-menu__price-bottom-link-text2">
+                предложение
+              </p>
+              <img src="./img/main/Line.svg" alt="" class="main-menu__price-bottom-link-img">
+            </div>
+          </div>
+        </div>
+        </div>
+      </main>
+      <footer class="main-menu__bottom"> 
+        <p class="main-menu__bottom-comand">
+          © 2019 CPS <br>
+          Разработано командой Apesong 
+          
+        </p>
+        <p class="main-menu__bottom-confidentiality">
+          Политика конфиденциальности
+        </p>
+        <p class="main-menu__bottom-offer">
+          Информация, размещенная на данной странице, не является публичной офертой
+        </p>
+
+      </footer>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="./js/bundle.js"></script></body>
+</html>
